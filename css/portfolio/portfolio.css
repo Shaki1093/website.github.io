@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Caveat !important;
+  font-size: 27px !important;
+  animation: fade-in-right 500ms forwards;
+}
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(-10);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" ".grid-container .grid-container .grid-container" "footer footer footer";
+}
+
+header {
+  grid-area: "header";
+}
+
+main {
+  grid-area: "main";
+}
+
+footer {
+  grid-area: "footer";
+}
+
+/* Start header */
+header nav {
+  background-color: rgba(0, 255, 255, 0.65) !important !important;
+}
+header nav li .nav-item {
+  color: rgb(20, 46, 46) !important;
+}
+header nav li .nav-link:hover {
+  color: rgb(20, 46, 46) !important;
+}
+
+main h1 {
+  text-align: center;
+}
+main p {
+  width: 75vh;
+  text-align: center;
+  position: relative;
+  left: 30rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-area: ".grid-container";
+  justify-content: space-evenly;
+}
+.grid-container #card1 {
+  opacity: 0.5;
+}
+.grid-container #card1 img {
+  height: 10rem;
+}
+.grid-container #card2 {
+  opacity: 0.3;
+}
+.grid-container #card2 img {
+  height: 5rem;
+}
+.grid-container #card3 {
+  opacity: 0.2;
+}
+.grid-container #card3 img {
+  height: 6rem;
+}/*# sourceMappingURL=portfolio.css.map */

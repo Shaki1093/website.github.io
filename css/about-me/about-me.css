@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+body {
+  font-family: Caveat !important;
+  font-size: 27px !important;
+}
+
+header nav {
+  background-color: rgba(0, 255, 255, 0.65) !important;
+}
+header nav li #color1 {
+  color: rgb(20, 46, 46) !important;
+}
+header nav li .nav-link:hover {
+  color: rgb(20, 46, 46) !important;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
+}
+.wrapper header {
+  grid-area: "header";
+}
+.wrapper main {
+  grid-area: "main";
+}
+.wrapper footer {
+  grid-area: "footer";
+}/*# sourceMappingURL=about-me.css.map */

@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+
+//Variable
+$bkg-cl: rgba(0, 255, 255, 0.65) !important;
+$darkgrey: rgb(20, 46, 46) !important;
+$bkgfnt: rgba(22, 40, 34, 0.485) !important;
+$fntcolor: rgb(199, 197, 197) !important;
+
+//CSS
+body{
+    font: {
+        family: Caveat !important;
+        size: 27px !important;
+    }
+    animation: fade-in-right 500ms forwards;
+
+    @keyframes fade-in-right {
+        0%{
+            transform: translateX(-10);
+            opacity: 0;
+        }
+
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+/* Start header */
+header{
+    nav{
+        background-color: $bkg-cl !important;
+
+        li{
+            #color1{
+                color: $darkgrey;
+            }
+            .nav-link{
+                &:hover{
+                    color: $darkgrey;
+                }
+            }
+        }
+    }
+}
+/* End header */
+
+/* Start main */
+.main{
+    position: relative;
+    //Images
+    .background{
+        position:absolute;
+        width: 100%;
+        height: 175%;
+        z-index: -1;
+        opacity: .85;
+    }
+    .me{
+        width: 20%;
+        height: 20%;
+        position: relative;
+        border-radius: 70px;
+        top:-20rem;
+        left: 75rem;
+    }
+    //main div
+    h1{
+        text-align: center;
+        background-color: $bkgfnt;
+        color: $fntcolor;
+    }
+    p{
+        background-color: $bkgfnt;
+        color: $fntcolor;
+        width: 75rem;
+    }
+}
+/* End main */
+
+//Start contact me
+.contact{
+    position: relative;
+    top: -15rem;
+    left: 30rem;
+    background-color: $bkgfnt;
+    color: $fntcolor;
+    width: 30rem;
+}
+//End contact me
+
+//footer
+$Orange: hsl(25, 97%, 53%);
+
+// Neutral
+
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+$link-blue: hsl(228, 45%, 44%);
+
+footer {
+    background-color: $Medium-Grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.h1, .h2{
+    color: $White;
+}
+
+.p{
+    line-height: 1.8;
+    color: $Light-Grey;
+}
+
+.orange{
+    display: inline-block;
+    background-color: $Dark-Blue;
+    color: $Orange;
+    padding: 0.3rem 1rem 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.ul{
+    list-style-type: none;
+}
+
+.ul, .li, button{
+    font: {
+        family: inherit;
+        size: 1rem;
+    }
+}
+
+button{
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: $Dark-Blue;
+    width: 3rem;
+    height: 3rem;
+    color: $White;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding-top: .3rem;
+    transition: 0.3s;
+
+    &:hover{
+        background-color: $Light-Grey;
+    }
+
+    &:focus{
+        background-color: $Orange;
+    }
+}
+
+.btn-submit{
+    background-color: $Orange;
+    padding: .6rem 2rem .5rem;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    color: $White;
+    margin-top: 2rem;
+    transition: .3s;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .9rem;
+
+    &:hover{
+        background-color: $White;
+        color: $Orange;
+    }
+}
+
+.container{
+
+    background-image: linear-gradient(
+        to bottom,
+        $Dark-Blue,
+        $Very-Dark-Blue 
+    );
+    text-align: center;
+    max-width: 400px;
+    padding: 2rem 1.5rem;
+    border-radius: 0.6rem;
+
+    img{
+        padding: .8rem;
+        border-radius: 50%;
+        background-color: $Dark-Blue;
+        margin-bottom: 2rem;
+    }
+
+    h1,p{
+        margin-bottom: 1rem;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul li{
+        margin: .5rem;
+    }
+}
+
+.thank-you{
+    background-image: linear-gradient(
+        to bottom,
+        $Dark-Blue,
+        $Very-Dark-Blue 
+    );
+    text-align: center;
+    max-width: 400px;
+    padding: 2rem 1.5rem;
+    border-radius: 0.6rem;
+
+    .h2{
+        margin-top: 2rem;
+    }
+
+    .h2, .p {
+        margin-bottom: 1rem;
+    }
+
+    img{
+        display: block;
+        margin: 0 auto 1rem;
+    }
+}
+
+.hidden-3{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.hidden-1{
+    display: none;
+}
+

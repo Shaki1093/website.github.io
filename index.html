@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my page here you can see my portfolio and how i set everything up">
+    <title>Shaki Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Shaki Page</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link disable" aria-disabled="true" id="color1">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about-me.html">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="project.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Get in Touch</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchBar">
+                      <button class="btn btn-outline-success" type="submit" id="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    </header>
+    
+    <div class="main">
+        <img src="images/pexels-pixabay-147411.jpg" alt="landscape" class="background">
+        <h1>Welcome to my page</h1>
+        <br><br>
+        <p>Hello My name is Joshua. I am 28 years old and currently I'm learning how to do front end. 
+            To briefly explain how this page was created.First i took the time to do the header and the nav bar.
+             At first it wasnt easy since i had to work around on separating the search bar from
+             the list but finally manage to make it work. The i added a search icon it does not have the function of a button but is representing one.
+              After that on the main section i put the background image with the opacity.</p>
+        <br>
+        <p>One of the thing i like about me is that im goofy im always playing around and having fun with the smalles things. 
+            ive been working on amazon for almost 3 years by now and currently im a learning trainer. Now to close this, 
+            lets talk about the last section of this web page. With the implementation of a sign in submition now,
+             it will be easy for me to comunicate back with people around the world.
+        </p>
+         <p>Currently i do not have any social media will update in the future. Meanwhile please file the form for better comunication.</p>
+        <img src="images/Joshua.jpg" alt="Josh" class="me">
+    </div>
+
+    <div class="contact">
+        <h2>To Contact me please submit this form!</h2>
+        <br>
+        <form>
+            <label for="email" class="label">Email: </label>
+            <input type="email"  placeholder="example@gmail.com">
+            <br> <br>
+            <label for="number" class="label">Phone Number:</label>
+            <input type="text" placeholder="(xxx)-xxx-xxxx">
+            <br><br>
+                <label>Prefer Method of Comunication:</label>
+                <br><br>
+                <input type="radio" value="Email">
+                <label>Email</label>
+
+                <input type="radio">
+                <label>Phone Call</label>
+
+                <input type="radio">Text</input>
+                <label>Text</label>
+                <br><br>
+        </form>
+        <button class="btn-submit" id="submit">Submit</button>
+    </div>
+    <footer class="footer hidden-3">
+        <!-- Rating state start -->
+<div class="container hidden-1">
+  <img src="images/icon-star.svg">
+  <h1 class="h1">How did we do?</h1>
+
+  <p class="p">Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+
+  <ul class="ul">
+    <li class="li"><button class="btn">1</button></li>
+    <li class="li"><button class="btn">2</button></li>
+    <li class="li"><button class="btn">3</button></li>
+    <li class="li"><button class="btn">4</button></li>
+    <li class="li"><button class="btn">5</button></li>
+  </ul>
+
+  <button class="btn-submit" id="submit-rating">Submit</button>
+</div>
+
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+<div class="thank-you hidden">
+  <img src="images/illustration-thank-you.svg">
+  <p class="orange p">You selected <span id="rating" style="display: inline-block; margin: 0 0.3rem;">1</span> out of 5</p>
+
+  <h2 class="h2">Thank you!</h2>
+
+  <p class="p">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+  
+    <button class="btn-submit" id="go-back">Go Back</button>  
+</div>
+
+
+  <!-- Thank you state end -->
+  <script src="js/script.js"></script>
+    </footer>
+  
+</body>
+</html>

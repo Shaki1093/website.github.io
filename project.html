@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portfolio/portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Shaki Page</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-me.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disable" aria-disabled="true" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Get in Touch</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to the portfolio side</h1>
+
+        <p>Here is some of the sample of some of my project here i'm including Front-end and some Back-end projects.
+            As i still develop myself of the front end side since back-end was my main way to go for programing.
+        </p>
+    </main>
+
+<div class="grid-container" id="grid-container">
+    <!--card1-->
+    <div class="card grid-item" style="width: 18rem;" id="card1">
+        <img src="images/BvS.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Movie Searcher</h5>
+          <p class="card-text">First Front-end project working on apis for a movie.</p>
+          <a href="https://github.com/Shaki1093/Movie_Search_Vanilla" class="btn btn-primary">GitHub Link</a>
+        </div>
+        <!--card 2-->
+      </div>
+      <div class="card grid item" style="width: 18rem;" id="card2">
+        <img src="images/Batman.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Movie Searcher Java</h5>
+          <p class="card-text">Working on the Back-End side of the movie searcher but in this case i only used Java. Still in development</p>
+          <a href="#" class="btn btn-primary">GitHub Link</a>
+        </div>
+        <!--card 3-->
+      </div>
+      <div class="card grid-item" style="width: 18rem;" id="card3">
+        <img src="images/Web.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">My website portfolio</h5>
+          <p class="card-text">This is my website in which you are currently in. Here im using Bootstrap, sass, js and more to come in the future</p>
+          <a href="https://github.com/Shaki1093/my-website" class="btn btn-primary">GitHub Link</a>
+        </div>
+      </div>
+</div>
+<script src="js/portfolio.js"></script>
+</body>
+</html>

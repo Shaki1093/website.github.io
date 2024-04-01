@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+
+$bkg-cl: rgba(0, 255, 255, 0.65) !important;
+$darkgrey: rgb(20, 46, 46) !important;
+$bkgfnt: rgba(22, 40, 34, 0.485) !important;
+$fntcolor: rgb(199, 197, 197) !important;
+
+body{
+    font: {
+        family: Caveat !important;
+        size: 27px !important;
+    }
+}
+
+header{
+  nav{
+      background-color: $bkg-cl;
+
+      li{
+          #color1{
+              color: $darkgrey;
+          }
+          .nav-link{
+              &:hover{
+                  color: $darkgrey;
+              }
+          }
+      }
+  }
+}
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+
+    header{
+        grid-area: "header";
+    }
+
+    main{
+        grid-area: "main";
+    }
+
+    footer{
+        grid-area: "footer";
+
+        
+    }
+}
